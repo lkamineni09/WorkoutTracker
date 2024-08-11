@@ -5,9 +5,8 @@ import MainPage from './components/MainPage';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>LASYA</Text>
       <StatusBar style="auto" />
-      {/* <MainPage></MainPage> */}
+      <MainPage></MainPage>
     </View>
   );
 }
