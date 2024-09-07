@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import { TextInput } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 
-export default function LoginPage() {
+export default function LoginPage({ navigation }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -30,7 +30,7 @@ export default function LoginPage() {
           />
       </View>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('MainPage')}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
     </View>

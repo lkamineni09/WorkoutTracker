@@ -9,7 +9,7 @@ const MainPage = ({ navigation }) => {
       <Text style={styles.title}>WorkoutWhiz</Text>
       <Button
         title="Start Workout"
-        onPress={() => navigation.navigate('Workout')}
+        onPress={() => navigation.navigate('LogWorkout')}
       />
       <Button
         title="View History"
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   logo: {
-    width: 100,
+    width: 150,
     height: 100,
   },
 });
