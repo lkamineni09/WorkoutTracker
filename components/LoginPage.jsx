@@ -15,11 +15,19 @@ export default function LoginPage() {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
+          onChangeText={setUsername}
+          value={username}
+          placeholder="Username"
+          />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.input}
           onChangeText={setPassword}
           value={password}
           placeholder="Password"
           />
-    
       </View>
 
       <TouchableOpacity style={styles.button}>
@@ -37,46 +45,37 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",
+    paddingHorizontal: 20,
   },
   title: {
     fontWeight: "bold",
+    fontSize: 24,
+    marginBottom: 30,
   },
-
+  inputContainer: {
+    width: "80%",
+    marginBottom: 20,
+  },
   input: {
-    width: "100%",
+    height: 50,
     borderWidth: 1,
+    padding: 10,
     borderRadius: 5,
     borderColor: "#ddd",
+    width: "100%",
   },
   button: {
     backgroundColor: "#01a5fc",
     borderRadius: 25,
     alignItems: "center",
-    width: '100%',
+    width: "60%",
+    paddingVertical: 15,
   },
   buttonText: {
     color: "#fff",
-    fontWeight: "bold"
-  },
- 
-  signupContainer: {
-    flexDirection: "row"
-  },
-  inputContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    width: "100%",
-  },
-  input: {
-    flex: 1,
-    height: 50,
-    marginVertical: 10,
-    borderWidth: 1,
-    padding: 10,
-    borderRadius: 5,
-    borderColor: "#ddd",
+    fontWeight: "bold",
+    fontSize: 18,
   },
 });
-
 
 
