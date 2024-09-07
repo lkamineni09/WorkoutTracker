@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import profilepic from '../assets/profilepic.jpg';
 
 const Profile = () => {
     return (
         <View style={styles.container}>
-            {/* <Image source={{ uri: 'https://example.com/profilepic.jpg' }} style={styles.profilePic} /> */}
+            <Image source={profilepic} style={styles.profilepic} />
             <Text style={styles.name}>Lasya Kamineni</Text>
             <Text style={styles.bio}>Workout Tracker</Text>
         </View>
