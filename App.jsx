@@ -6,6 +6,7 @@ import LoginPage from "./components/LoginPage";
 import Profile from "./components/Profile";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import AccountSettings from "./components/AccountSettings";
 const Stack = createStackNavigator();
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="MainPage" component={MainPage} />
         <Stack.Screen name="LogWorkout" component={LogWorkout} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="AccountSettings" component={AccountSettings} />
       </Stack.Navigator>
     </NavigationContainer>
   );
